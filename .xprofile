@@ -1,0 +1,4 @@
+#!/bin/sh
+xinput set-prop "SYNA2BA6:00 06CB:CE78 Touchpad" "libinput Click Method Enabled" 0 1
+xinput set-prop "SYNA2BA6:00 06CB:CE78 Touchpad" "libinput Tapping Enabled" 1
+
