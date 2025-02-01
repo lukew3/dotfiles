@@ -18,7 +18,7 @@ gaps inner 5
 #gaps outer 20
 
 # Set Desktop Wallpaper
-exec --no-startup-id feh --bg-fill /home/luke/Downloads/wallpaper.png
+exec --no-startup-id feh --bg-fill /home/luke/Desktop/wallpaper.png
 
 # Dual Monitor Setup
 exec --no-startup-id xrandr --output HDMI-1-1 --auto --left-of eDP-1
@@ -27,7 +27,7 @@ exec --no-startup-id xrandr --output HDMI-1-1 --auto --left-of eDP-1
 bindsym XF86MonBrightnessUp exec sudo brightnessctl -q set +5
 bindsym XF86MonBrightnessDown exec sudo brightnessctl -q set $(($(brightnessctl get)-5)) ```
 # Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -63,7 +63,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -214,5 +214,5 @@ bindsym $mod+Print exec gnome-screenshot -a
 bindsym $mod+n exec nautilus
 bindsym $mod+p exec gnome-pomodoro
 bindsym $mod+t exec todoist
-bindsym $mod+i exec firefox
+bindsym $mod+i exec brave-browser 
 bindsym $mod+y exec keepassxc
