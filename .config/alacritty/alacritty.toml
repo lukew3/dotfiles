@@ -1,0 +1,13 @@
+[window]
+opacity = 0.9
+padding.x = 5
+padding.y = 5
+decorations_theme_variant = "Light" # "Dark"
+
+[font]
+size = 6.0
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+]
