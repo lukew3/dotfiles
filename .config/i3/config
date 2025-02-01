@@ -17,9 +17,6 @@ gaps inner 5
 #gaps inner 30
 #gaps outer 20
 
-# Set Desktop Wallpaper
-exec --no-startup-id feh --bg-fill /home/luke/Desktop/wallpaper.png
-
 # Dual Monitor Setup
 exec --no-startup-id xrandr --output HDMI-1-1 --auto --left-of eDP-1
 
