@@ -1,7 +1,9 @@
 #!/bin/sh
 sudo apt update
 sudo apt install -y \
-	polybar 
+	polybar \
+	flameshot
+
 
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
 cd i3-gaps-deb
